@@ -34,6 +34,7 @@ nav {
   width: 64px;
   border-radius: 9999px;
   background-color: var(--grey-accent);
+  flex-shrink: 0;
 }
 .nav-part2 {
   display: flex;
@@ -187,7 +188,8 @@ nav button {
   display: flex;
   align-items: center;
   gap: 40px;
-  overflow-x: auto;
+  overflow-x: hidden;
+  position: relative;
 }
 .testimonial-card {
   background-color: #eaeaea;
@@ -195,6 +197,29 @@ nav button {
   border-radius: 0.75rem;
   max-width: 426px;
   flex-shrink: 0;
+}
+.maquee-to-left {
+  animation: marquee-to-left 10s linear infinite;
+}
+.maquee-to-right {
+  animation: marquee-to-right 10s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes marquee-to-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 .testimonial-card .header {
   display: flex;
@@ -236,4 +261,49 @@ nav button {
   margin-bottom: 38px;
   max-width: 50%;
   font-weight: 500;
+}
+footer {
+  background-color: #f1f0f0;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  margin-top: 138px;
+  padding: 54px 70px 18px 70px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 180px;
+}
+.logo-container {
+  margin-top: 54px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-container .logo {
+  width: 32px;
+  height: 32px;
+}
+.footer ul {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  font-size: 14px;
+}
+.footer .links {
+  margin-top: 52px;
+}
+.footer .links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+}
+.footer-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  margin-top: 56px;
 }
