@@ -183,13 +183,20 @@ nav button {
 .testimonials-section {
   margin: 98px 58px 0 58px;
 }
-.maquee {
+.maquee-container {
   margin-top: 78px;
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+}
+.maquee {
   display: flex;
   align-items: center;
   gap: 40px;
-  overflow-x: hidden;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 .testimonial-card {
   background-color: #eaeaea;
@@ -207,18 +214,18 @@ nav button {
 }
 @keyframes marquee-to-left {
   0% {
-    transform: translateX(100%);
+    left: 100%;
   }
   100% {
-    transform: translateX(-100%);
+    left: -150%;
   }
 }
 @keyframes marquee-to-right {
   0% {
-    transform: translateX(-100%);
+    left: -150%;
   }
   100% {
-    transform: translateX(100%);
+    left: 100%;
   }
 }
 .testimonial-card .header {
