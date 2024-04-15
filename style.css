@@ -35,6 +35,7 @@ nav {
   border-radius: 9999px;
   background-color: var(--grey-accent);
   flex-shrink: 0;
+  overflow: hidden;
 }
 .nav-part2 {
   display: flex;
@@ -115,6 +116,7 @@ nav button {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .about-section {
   margin: 98px 58px 0 58px;
@@ -148,6 +150,7 @@ nav button {
   width: 75px;
   height: 75px;
   text-align: center;
+  overflow: hidden;
 }
 .choose-us-section .grid .grid-card .title {
   margin-top: 48px;
@@ -238,6 +241,7 @@ nav button {
   border-radius: 9999px;
   width: 75px;
   height: 75px;
+  overflow: hidden;
 }
 .testimonial-card .header .header-info {
   display: flex;
