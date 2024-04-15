@@ -1,0 +1,239 @@
+:root {
+  --grey-accent: #d9d9d9;
+  --grey: #b8b5b5;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+}
+button {
+  border: none;
+  background-color: var(--grey-accent);
+  padding: 24px 54px;
+  text-align: center;
+  font-weight: 600;
+}
+main {
+  margin-top: 84px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 28px;
+}
+.logo {
+  height: 64px;
+  width: 64px;
+  border-radius: 9999px;
+  background-color: var(--grey-accent);
+}
+.nav-part2 {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  column-gap: 60px;
+}
+.nav-part2 ul {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.nav-part2 ul li {
+  padding: 4px 8px;
+}
+nav button {
+  background-color: var(--grey);
+}
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 378px;
+  row-gap: 24px;
+  margin: 0 58px;
+  gap: 24px;
+}
+.hero-img {
+  background-color: var(--grey-accent);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+.title-tag {
+  padding: 6px 0;
+  text-align: center;
+  background-color: var(--grey-accent);
+  border-radius: 9999px;
+  width: 236px;
+}
+.hero-section h1 {
+  font-weight: 700;
+  font-size: xx-large;
+  margin-top: 45px;
+}
+.hero-section h2 {
+  font-weight: 500;
+  font-size: x-large;
+  margin-top: 28px;
+}
+.hero-section button {
+  margin-top: 38px;
+  font-weight: 400;
+}
+.hero-section ul {
+  margin-top: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.75rem;
+  padding: 28px 20px;
+  background-color: var(--grey-accent);
+  max-width: 418px;
+}
+.client-row {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--grey-accent);
+  margin-top: 80px;
+}
+.client-row div {
+  height: 75px;
+  width: 75px;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section {
+  margin: 98px 58px 0 58px;
+}
+.about-section h1 {
+  margin-top: 58px;
+}
+.about-section p {
+  font-weight: 500;
+  margin-top: 50px;
+  text-align: justify;
+}
+.choose-us-section {
+  margin: 98px 58px 0 58px;
+}
+.choose-us-section .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px;
+  margin-top: 66px;
+}
+.choose-us-section .grid .grid-card {
+  background-color: var(--grey);
+  border-radius: 0.75rem;
+  padding: 18px 24px;
+  height: 288px;
+}
+.choose-us-section .grid .grid-card .icon {
+  background-color: var(--grey-accent);
+  border-radius: 9999px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+.choose-us-section .grid .grid-card .title {
+  margin-top: 48px;
+}
+.choose-us-section .grid .grid-card .text {
+  margin-top: 18px;
+}
+.choose-us-section .grid .stats-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.choose-us-section .grid .stats-block .stats-figures {
+  font-weight: 700;
+  font-size: xx-large;
+}
+.solutions-section {
+  margin: 98px 58px 0 58px;
+}
+.solutions-section .services-conatainer {
+  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+}
+.solutions-section .services-conatainer .service {
+  display: flex;
+  align-items: center;
+  gap: 98px;
+}
+.testimonials-section {
+  margin: 98px 58px 0 58px;
+}
+.maquee {
+  margin-top: 78px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  overflow-x: auto;
+}
+.testimonial-card {
+  background-color: #eaeaea;
+  padding: 28px;
+  border-radius: 0.75rem;
+  max-width: 426px;
+  flex-shrink: 0;
+}
+.testimonial-card .header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.testimonial-card .header .image {
+  background-color: var(--grey-accent);
+  border-radius: 9999px;
+  width: 75px;
+  height: 75px;
+}
+.testimonial-card .header .header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.testimonial-card .text {
+  margin-top: 26px;
+  padding: 0 28px;
+}
+.contact-section {
+  margin: 98px 28px 0 28px;
+  background-color: #f1f0f0;
+  border-radius: 0.75rem;
+  padding: 32px 20px;
+}
+.contact-section .title-tag {
+  width: 142px;
+}
+.contact-section h1 {
+  margin-top: 42px;
+  max-width: 50%;
+  font-size: xx-large;
+}
+.contact-section h2 {
+  margin-top: 28px;
+  margin-bottom: 38px;
+  max-width: 50%;
+  font-weight: 500;
+}
